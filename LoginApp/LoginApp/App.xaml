@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             
+             mc:Ignorable="d"
+             x:Class="LoginApp.App"
+             >
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style x:Key="TabbedStyle" TargetType="TabbedPage">
+                <Setter Property="BarBackgroundColor" Value="White"/>
+                <Setter Property="BarTextColor" Value="Black"/>
+                <Setter Property="NavigationPage.HasBackButton" Value="False"/>
+                <Setter Property="NavigationPage.HasNavigationBar" Value="False"/>
+             </Style>
+            
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

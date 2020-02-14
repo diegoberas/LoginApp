@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="LoginApp.DiscoveryPage"
+             Title=""
+             >
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid BackgroundColor="LightGray">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="5*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackLayout Grid.Row="0" Grid.Column="0" BackgroundColor="White">
+                    <Image Source="cerveza.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" HeightRequest="100" WidthRequest="100"/>
+                    <Button Text="Bar and Hotels" FontAttributes="Bold" FontSize="Small"/>
+                </StackLayout>
+                <StackLayout Grid.Row="0" Grid.Column="1" BackgroundColor="White">
+                    <Image Source="comida.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" HeightRequest="100" WidthRequest="100"/>
+                    <Button Text="Fine Dining" FontAttributes="Bold" FontSize="Small"/>
+                </StackLayout>
+                <StackLayout Grid.Row="1" Grid.Column="0" BackgroundColor="White">
+                    <Image Source="cafe.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" HeightRequest="100" WidthRequest="100"/>
+                    <Button Text="Coffee" FontAttributes="Bold" FontSize="Small"/>
+                </StackLayout>
+                <StackLayout Grid.Row="1" Grid.Column="1" BackgroundColor="White">
+                    <Image Source="mapa.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" HeightRequest="100" WidthRequest="100"/>
+                    <Button Text="Nearby" FontAttributes="Bold" FontSize="Small"/>
+                </StackLayout>
+                <StackLayout Grid.Row="2" Grid.Column="0" BackgroundColor="White">
+                    <Image Source="pan.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" HeightRequest="100" WidthRequest="100"/>
+                    <Button Text="Fast Food" FontAttributes="Bold" FontSize="Small"/>
+                </StackLayout>
+                <StackLayout Grid.Row="2" Grid.Column="1" BackgroundColor="White">
+                    <Image Source="pizza.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" HeightRequest="100" WidthRequest="100"/>
+                    <Button Text="Featured Food" FontAttributes="Bold" FontSize="Small"/>
+                </StackLayout>
+                
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

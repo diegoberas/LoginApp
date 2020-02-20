@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="LoginApp.LoginPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid BackgroundColor="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="5*"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" Text="Login" Margin="20,20,0,0" TextColor="Black" FontSize="28" FontAttributes="Bold"/>
+                <Label  Grid.Row="0" Grid.Column="3" Text="Sign Up" Margin="20,20,0,0" TextColor="Gray" FontSize="Medium">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding SignUpPageCommand}"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                
+                <Image Source="login.png" Grid.Row="1" Grid.ColumnSpan="4" HorizontalOptions="Center" WidthRequest="150" HeightRequest="150" Margin="0,50,0,30"/>
+                <Entry  Text="{Binding User.UserName}" Grid.Row="2"  Margin="35,0,35,0" Grid.ColumnSpan="4" Placeholder="Username or Email Address" PlaceholderColor="Gray" x:Name="name" />
+                <Entry Text="{Binding User.Password}" Grid.Row="3" Margin="35,0,35,0" Grid.ColumnSpan="4"  Placeholder="Password" PlaceholderColor="Gray" IsPassword="True" x:Name="password" />
+                <Image Source="ojo.png" Grid.Row="3" Grid.Column="3" WidthRequest="5" x:Name="imageshow">
+                    <Image.GestureRecognizers >
+                        <TapGestureRecognizer Tapped="Vision"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Button Command="{Binding LoginCommand}" Text="Log In" Grid.Row="5" Grid.ColumnSpan="3" Margin="90,40,0,0" BackgroundColor="WhiteSmoke" TextColor="Gray" />
+                <Label Text="Login with" TextColor="Gray" Grid.Row="7" Grid.ColumnSpan="4" HorizontalOptions="Center"  Margin="40"/>
+                <StackLayout Grid.Row="8" Grid.ColumnSpan="4" HorizontalOptions="Center" Margin="0,0,0,80"  Orientation="Horizontal" >
+                    <Image Grid.Row="0" Source="twitter.png" WidthRequest="45" HeightRequest="45"/>
+                    <Image Grid.Row="0" Source="google.png" WidthRequest="45" HeightRequest="45" />
+                    <Image Grid.Row="0" Source="facebook.png" WidthRequest="45" HeightRequest="45"/>
+                    <Image Grid.Row="0" Source="github.png" WidthRequest="45" HeightRequest="45"/>
+                </StackLayout>
+                
+
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="LoginApp.DiscoveryPage"
+             Title=""
+             >
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid BackgroundColor="LightGray">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="5*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackLayout Grid.Row="0" Grid.Column="0" BackgroundColor="White">
+                    <Image  Source="cerveza.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" HeightRequest="100" WidthRequest="100"/>
+                    <Button x:Name="beer" Text="{Binding Beer}" FontAttributes="Bold" FontSize="Small" Clicked="beer_Clicked"/>
+                 </StackLayout>
+                <StackLayout Grid.Row="0" Grid.Column="1" BackgroundColor="White">
+                    <Image Source="comida.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" HeightRequest="100" WidthRequest="100"/>
+                    <Button x:Name="dine" Text="{Binding Dine}" FontAttributes="Bold" FontSize="Small" Clicked="dine_Clicked"/>
+                </StackLayout>
+                <StackLayout Grid.Row="1" Grid.Column="0" BackgroundColor="White">
+                    <Image Source="cafe.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" HeightRequest="100" WidthRequest="100"/>
+                    <Button x:Name="coffee" Text="{Binding Coffee}" FontAttributes="Bold" FontSize="Small" Clicked="coffee_Clicked"/>
+                </StackLayout>
+                <StackLayout Grid.Row="1" Grid.Column="1" BackgroundColor="White">
+                    <Image Source="mapa.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" HeightRequest="100" WidthRequest="100"/>
+                    <Button x:Name="map" Text="{Binding Map}" FontAttributes="Bold" FontSize="Small" Clicked="map_Clicked"/>
+                </StackLayout>
+                <StackLayout Grid.Row="2" Grid.Column="0" BackgroundColor="White">
+                    <Image Source="pan.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" HeightRequest="100" WidthRequest="100"/>
+                    <Button x:Name="fastfood" Text="{Binding FastFood}" FontAttributes="Bold" FontSize="Small" Clicked="fastfood_Clicked"/>
+                </StackLayout>
+                <StackLayout Grid.Row="2" Grid.Column="1" BackgroundColor="White">
+                    <Image Source="pizza.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" HeightRequest="100" WidthRequest="100"/>
+                    <Button x:Name="pizza" Text="{Binding FFood}" FontAttributes="Bold" FontSize="Small" Clicked="pizza_Clicked"/>
+                </StackLayout>
+                
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
